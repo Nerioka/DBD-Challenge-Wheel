@@ -16,7 +16,7 @@ async def on_message(message):
         return
 
     if message.content.startswith('!surv'):
-        challenge_surv = [
+        defi_surv = [
           "Les survivants doivent completer un gen en équipe. Tout le monde doit être présent pour sa complétion",
 
           "Les survivants doivent designer un joueur qui ne peut pas être soigner autrement que par 'Self-Care' ou 'Inner Strength'. Soigner pour relever est une exception",
@@ -90,9 +90,9 @@ async def on_message(message):
           "Tous les survivants doivent utiliser 'Autodidact' et avoir le maximum de stack avant de s'enfuir",
 
           ]
-        await message.author.send("Le challenge est : {}!".format(random.choice(challenge_surv)))
+        await message.author.send("Le challenge est : {}!".format(random.choice(defi_surv)))
     if message.content.startswith('!tueur'):
-        challenge_tueur = [
+        defi_tueur = [
 
           "Le tueur n'a pas le droit de taper les générateurs",
 
@@ -126,7 +126,7 @@ async def on_message(message):
           
 
           ]
-        await message.author.send("Le défi est : {}!".format(random.choice(challenge_tueur)))
+        await message.author.send("Le défi est : {}!".format(random.choice(defi_tueur)))
     if message.content.startswith('!roulette_surv'):
       surv_perks = [
       "Ace in the hole",
